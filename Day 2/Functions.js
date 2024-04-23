@@ -61,9 +61,6 @@ function greet(greeting, name) {
     var input= prompt("Enter temperature");
     console.log(input);
 
-    if(){
-        
-    }
   }
 const args = ["Hello", "John"];
 greet(...args); 
