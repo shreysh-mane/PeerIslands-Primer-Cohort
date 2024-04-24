@@ -1,4 +1,4 @@
-1. Use the following array to complete the below tasks.
+// Use the following array to complete the tasks below
 
 const products = [
   { id: 1, name: "Laptop", price: 999.99, category: "Electronics" },
@@ -13,10 +13,13 @@ const products = [
   { id: 10, name: "Backpack", price: 59.99, category: "Accessories" }
 ];
 
-1. Write a JavaScript program to create a new array that contains only the names of the products from the cart items array.
+1. Write a JavaScript program to create a new array that contains only the names of the products from the product array.
 
-2. Write a JavaScript program to filter out and retrieve only the items from the cart whose price is greater than $50.
 
-3. Write a JavaScript program to calculate the total price of all items in the cart by multiplying the price of each item by its quantity, and then summing up these values.
+2. Write a JavaScript program to filter out and retrieve only the items from the product array whose price is greater than $50.
 
-4. Write a JavaScript program to create an array of products that belong to the same category. 
+
+3. Write a JavaScript program to calculate the total price of all items in the product array by multiplying the price of each item by its quantity, and then summing up these values.
+
+
+4. Write a JavaScript program to create an array of products that belong to the same category. (e.g Electronics)
