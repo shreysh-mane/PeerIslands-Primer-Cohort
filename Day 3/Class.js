@@ -1,11 +1,28 @@
 
+var arr=[10,20,30];
+
+// var arr={
+//     0:10,
+//     1:20,
+//     2:30
+// }
+
+
+for(var ind in arr){
+    console.log(arr[ind]);
+}
 
 var obj={
     name:"Shreysh",
     city:"Pune",
     age:24
 }
+console.log(obj["name"]);
+console.log(obj.name);
 
+for(var key in obj){
+    console.log(obj[key]);
+}
 
 class Person{
 
@@ -53,7 +70,7 @@ class Person2 extends Person{
 
 }
 
-var p2=new Person2("Yash","Pune",24,"Revature");
-console.log(p2.name);
-console.log(p2.getName());
+// var p2=new Person2("Yash","Pune",24,"Revature");
+// console.log(p2.name);
+// console.log(p2.getName());
 

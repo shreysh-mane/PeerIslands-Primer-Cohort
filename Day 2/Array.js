@@ -1,6 +1,6 @@
 
 
-// var arr=[10,20,30,40];
+var arr=[10,20,30,40];
 
 // console.log(arr[0]);
 
@@ -23,6 +23,7 @@
 // for(var index in arr){
 //     console.log(index);
 // }
+
 
 // forEach loop
 // var arr=[10,20,30,40,50];
