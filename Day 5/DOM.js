@@ -51,3 +51,12 @@ console.log(greetEle3.textContent);
 
 greetEle.innerHTML="<ul><li> Bye</li></ul>";
 greetEle3.textContent="<ul><li> Bye<li></ul>";  
+
+
+// Dynamically add Elements in web page
+var ulElements= document.getElementById('ulList');
+// console.log();
+ulElements.innerHTML= ulElements.innerHTML + '<li>LI4</li>';
+
+
+// createElement
