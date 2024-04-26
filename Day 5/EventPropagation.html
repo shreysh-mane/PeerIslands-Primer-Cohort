@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="parent0" style="padding:25px; border: 2px solid black; background-color: green;">
+        <div id="parent" style="padding:25px; border: 2px solid black; background-color: yellow;">
+            <div id="child" style="padding:20px; border: 2px solid red; background-color: red;">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        const parentElement = document.querySelector('#parent');
+        const parent0Element = document.querySelector('#parent0');
+        const childElement = document.querySelector('#child');
+
+
+        function parent0Function() {
+            console.log('Parent0 clicked');
+            
+        }
+
+        function parentFunction() {
+            console.log('Parent clicked');
+            event.stopPropagation();
+
+            
+        }
+
+        function childFunction() {
+            console.log('Child clicked');   
+           
+
+        }
+
+        parent0Element.addEventListener('click', parent0Function,true);
+        parentElement.addEventListener('click', parentFunction,true);
+        childElement.addEventListener('click', childFunction,true);
+
+    </script>
+</body>
+
+</html>
