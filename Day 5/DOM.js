@@ -9,7 +9,7 @@
 
 
 // Id selector
-// var greetEle= document.getElementById('greetMsg');
+var greetEle= document.getElementById('greetMsg');
 // console.log(greetEle);
 
 
@@ -36,5 +36,18 @@
 //  var listEle5= document.querySelectorAll('.listItems');
 //  console.log(listEle5);
 
- var listEle6= document.querySelectorAll('li');
- console.log(listEle6);
+//  var listEle6= document.querySelectorAll('li');
+//  console.log(listEle6);
+
+
+// Modify text of an HTML element.
+
+var greetEle3= document.getElementById('greetMsg2');
+
+
+// innerHTML , textContent
+console.log(greetEle.innerHTML);
+console.log(greetEle3.textContent);
+
+greetEle.innerHTML="<ul><li> Bye</li></ul>";
+greetEle3.textContent="<ul><li> Bye<li></ul>";  
