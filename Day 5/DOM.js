@@ -42,21 +42,43 @@ var greetEle= document.getElementById('greetMsg');
 
 // Modify text of an HTML element.
 
-var greetEle3= document.getElementById('greetMsg2');
+// var greetEle3= document.getElementById('greetMsg2');
 
 
 // innerHTML , textContent
-console.log(greetEle.innerHTML);
-console.log(greetEle3.textContent);
+// console.log(greetEle.innerHTML);
+// console.log(greetEle3.textContent);
 
-greetEle.innerHTML="<ul><li> Bye</li></ul>";
-greetEle3.textContent="<ul><li> Bye<li></ul>";  
+// greetEle.innerHTML="<ul><li> Bye</li></ul>";
+// greetEle3.textContent="<ul><li> Bye<li></ul>";  
 
 
 // Dynamically add Elements in web page
-var ulElements= document.getElementById('ulList');
-// console.log();
-ulElements.innerHTML= ulElements.innerHTML + '<li>LI4</li>';
+// var ulElements= document.getElementById('ulList');
+// // console.log();
+// ulElements.innerHTML= ulElements.innerHTML + '<li>LI4</li>';
 
 
 // createElement
+
+
+
+// Events
+
+// console.log(greetEle);
+var btnEle= document.getElementById('btn');
+console.log(btnEle);
+
+// Event Registration
+// 1. Directly add event to HTML element
+// 2. Use addEventListeners
+
+// Event Handler
+function changeText(){
+    greetEle.innerHTML="BYE";
+}
+
+
+
+// Second way
+btnEle.addEventListener("click",changeText);
